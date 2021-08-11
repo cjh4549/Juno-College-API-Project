@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&family=Roboto:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background: linear-gradient(142deg, #b5eaea, #edf6e5);
+  font-family: "Oxygen", sans-serif;
+  min-height: 100vh;
+}
+
+.curve-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.curve-top svg {
+  position: relative;
+  display: block;
+  width: calc(129% + 1.3px);
+  height: 100px;
+}
+
+.curve-top .shape-fill {
+  fill: #ffffff;
+}
+
+.curve-transparent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  opacity: 0.3;
+}
+
+.curve-transparent svg {
+  position: relative;
+  display: block;
+  width: calc(161% + 1.3px);
+  height: 150px;
+}
+
+.curve-transparent .shape-fill {
+  fill: #ffffff;
+}
+
+.wrapper {
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  position: sticky;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  width: 100%;
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__menu li {
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+}
